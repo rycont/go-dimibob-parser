@@ -84,5 +84,8 @@ func main() {
 		w.Write([]byte(parse(req.Body)))
 	})
 
+	fmt.Println("Server is listening on PORT 5000")
+	fmt.Println("Request file on root route (/)")
+
 	http.ListenAndServe(":5000", nil)
 }
